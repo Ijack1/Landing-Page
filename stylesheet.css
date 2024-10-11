@@ -1,0 +1,171 @@
+/* =========================================
+        <-- Custom Properties -->
+========================================= */
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+
+    --nav-text-color: #E5E7EB;
+    --nav-logo-color: #F9FAF8;
+    --header-footer-background-color: #1F2937;
+    --call-backgroumd-color: #3882F6;
+    --quote-background-color: #E5E7EB;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+        <-- Title Sizes Reset --> 
+========================================= */
+h1,h2,h3,h4,h5,h6 {
+	font-size: initial;   
+}
+
+
+/* =========================================
+            <-- Title Sizes --> 
+========================================= */
+.title--xlg {
+    font-size: 48px;
+}
+
+.title--lg {
+	font-size: 36px;
+}
+
+.title {
+ 	font-size: 24px;
+}
+
+.title--sm {
+    font-size: 20px;
+}
+
+
+/* =========================================
+            <-- Text Sizes --> 
+========================================= */
+.text--lg {
+	font-size: 18px;   
+}
+
+.text {
+	font-size: 16px;   
+}
+
+.text--sm {
+	font-size: 12px;   
+}
+
+
+/* =========================================
+            <-- Containers -->  
+========================================= */
+.container {
+    max-width: 960px;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+.nav-container {
+    height: 60px;
+    padding-inline: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-footer-background-color);
+}
+
+.banner-container {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background-color: var(--header-footer-background-color);
+}
+
+.left-container {
+    min-height: 250px;
+    max-height: 300px;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    max-height: 250px;
+    min-width: 500px;
+    max-width: 500px;
+    background-color: rgb(143, 142, 142);
+}
+
+/* =========================================
+            <-- Top Memu -->  
+========================================= */
+.nav-menu {
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-menu li {
+    padding: 10px;
+}
+
+.nav-menu a {
+    color: var(--nav-text-color);  
+    text-decoration: none;
+}
+
+
+/* =========================================
+               <-- Logo -->  
+========================================= */
+.logo-text {
+    color: var(--nav-logo-color);
+}
+
+
+/* =========================================
+               <-- Text -->  
+========================================= */
+.hero-title {
+    font-weight: 900;
+    color: var(--nav-logo-color);
+}
+
+.hero-text {
+    color: var(--nav-text-color);
+}
+
+
+/* =========================================
+            <-- Buttons -->  
+========================================= */
+.hero-button {
+    width: 140px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--nav-text-color);
+    border-style: none;
+    border-radius: 8px;
+    background-color: #3882F6;
+}
