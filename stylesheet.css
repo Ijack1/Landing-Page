@@ -79,6 +79,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .nav-container {
+    position: fixed;
+    width: 100%;
     height: 60px;
     padding-inline: 30px;
     display: flex;
@@ -92,14 +94,18 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 60px;
+    padding: 20px;
     background-color: var(--header-footer-background-color);
 }
 
+.banner-container div {
+    flex: 1 1 auto;
+}
+
 .left-container {
-    min-height: 250px;
     max-height: 300px;
-    min-width: 500px;
     max-width: 500px;
 }
 
@@ -108,10 +114,41 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: center;
     align-items: center;
     min-height: 250px;
-    max-height: 250px;
-    min-width: 500px;
+    max-width: 400px;
     max-width: 500px;
     background-color: rgb(143, 142, 142);
+}
+
+.info-container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.info-boxes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.info-box-container {
+    max-width: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.info-box-image{
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    border: solid 3px #3882F6;
 }
 
 /* =========================================
@@ -133,6 +170,10 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
 }
 
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
 
 /* =========================================
                <-- Logo -->  
@@ -150,10 +191,20 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--nav-logo-color);
 }
 
-.hero-text {
+.hero-text-left {
     color: var(--nav-text-color);
 }
 
+.hero-text-right {
+    padding: 80px;
+    color: var(--nav-text-color);
+}
+
+.info-text {
+    text-align: center;
+    font-weight: 900;
+    color: var(--header-footer-background-color);
+}
 
 /* =========================================
             <-- Buttons -->  
@@ -168,4 +219,8 @@ h1,h2,h3,h4,h5,h6 {
     border-style: none;
     border-radius: 8px;
     background-color: #3882F6;
+}
+
+.hero-button:hover {
+    border: solid 2px var(--nav-text-color);
 }
