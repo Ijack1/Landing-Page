@@ -56,6 +56,10 @@ h1,h2,h3,h4,h5,h6 {
 /* =========================================
             <-- Text Sizes --> 
 ========================================= */
+.text--xlg {
+    font-size: 36px;
+}
+
 .text--lg {
 	font-size: 18px;   
 }
@@ -90,6 +94,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .banner-container {
+    margin-top: 60px;
     min-height: 500px;
     display: flex;
     justify-content: center;
@@ -151,6 +156,20 @@ h1,h2,h3,h4,h5,h6 {
     border: solid 3px #3882F6;
 }
 
+.quote-container {
+    padding: 20px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--quote-background-color);
+}
+
+.quote-text-container {
+    max-width: 700px;
+    text-align: center;
+}
+
 /* =========================================
             <-- Top Memu -->  
 ========================================= */
@@ -204,6 +223,17 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     font-weight: 900;
     color: var(--header-footer-background-color);
+}
+
+.quote-text {
+    font-family: "light italic";
+    color: var(--header-footer-background-color);
+    margin-bottom: 14px;
+}
+
+.blockquote-footer {
+    font-weight: 700;
+    color: black;
 }
 
 /* =========================================
