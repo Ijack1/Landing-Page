@@ -100,7 +100,7 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 30px;
     padding: 20px;
     background-color: var(--header-footer-background-color);
 }
@@ -170,8 +170,44 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
 }
 
+
+.call-to-container {
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.call-to-size-container {
+    min-height: 100px;
+    max-width: 800px;
+    color: var(--nav-logo-color);
+    background-color: var(--call-backgroumd-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.call-to-container div {
+    flex: 1 1 auto;
+}
+
+.footer-container {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--nav-text-color);
+    background-color: var(--header-footer-background-color);
+}
+
+
 /* =========================================
-            <-- Top Memu -->  
+            <-- Memus -->  
 ========================================= */
 .nav-menu {
     list-style: none;
@@ -253,4 +289,29 @@ h1,h2,h3,h4,h5,h6 {
 
 .hero-button:hover {
     border: solid 2px var(--nav-text-color);
+}
+
+.call-to-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.call-to-button button {
+
+    width: 140px;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--nav-text-color);
+    border-style: none;
+    border-radius: 8px;
+    background-color: #3882F6;
+    border: solid 2px var(--nav-text-color);
+}
+
+.call-to-button button:hover {
+    color: var(--header-footer-background-color);
+    border-color: var(--header-footer-background-color);
 }
